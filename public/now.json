@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "booknation-app",
+    "alias": "[your-name]-booknation-app",
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html"}
+    ]
+}
