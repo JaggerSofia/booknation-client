@@ -5,4 +5,8 @@ import './index.css';
 
 console.log(process.env)
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, 
+    document.getElementById('root'));

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export function BookStarRating({rating}) {
   const stars = [
@@ -21,5 +21,5 @@ export function BookStarRating({rating}) {
 
 function Star({filled}) {
   const library = filled ? 'fas' : 'far'
-  return <FontAwesomeIcon className='blue' icon={ [ library, 'star'  ]  } />
+  return '⭐'
 }
