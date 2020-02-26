@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
-import PrivateRoute from '../Utils/PrivateRoute'
-import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import BookListPage from '../../routes/BookListPage/BookListPage'
 import BookPage from '../../routes/BookPage/BookPage'
 import LoginPage from '../../routes/LoginPage/LoginPage'
@@ -32,9 +30,18 @@ class App extends Component {
               path={'/'}
               component={BookListPage}
             />
-            <PublicOnlyRoute path={'/login'} component={LoginPage} />
-            <PublicOnlyRoute path={'/register'} component={RegistrationPage} />
-            <PrivateRoute path={'/book/:bookId'} component={BookPage} />
+            <Route
+              path={'/login'}
+              component={LoginPage}
+            />
+            <Route
+              path={'/register'}
+              component={RegistrationPage}
+            />
+            <Route
+              path={'/book/:bookId'}
+              component={BookPage}
+            />
             <Route
               component={NotFoundPage}
             />

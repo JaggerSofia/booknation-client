@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BookContext from '../../contexts/BookContext'
 import BookApiService from '../../services/book-api-service'
 import { Hyph, Section } from '../../components/Utils/Utils'
-import { BookReviewRating } from '../../components/BookReviewRating/BookReviewRating'
+import { BookReviewRating } from '../../components/BookStarRating/BookStarRating'
 import ReviewForm from '../../components/ReviewForm/ReviewForm'
 import './BookPage.css'
 
@@ -82,7 +82,7 @@ function BookReviews({ reviews = [] }) {
             {review.text}
           </p>
           <p className='BookPage__review-user'>
-            <BookStarRating rating={review.rating} />
+            <BookReviewRating rating={review.rating} />
             <Hyph />
             {review.user.full_name}
           </p>
