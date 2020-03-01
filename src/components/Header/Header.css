@@ -10,7 +10,7 @@
   }
   
   .Header a {
-    color: #444;
+    color: #555;
     text-decoration: none;
   }
   
@@ -35,7 +35,7 @@
   }
   
   .Header__not-logged-in a:last-child {
-    background: rgb(255, 121, 121);
+    background: rgb(103, 193, 235);
     color: white;
     padding: 5px 15px;
     border-radius: 15px;

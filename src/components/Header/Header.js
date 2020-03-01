@@ -39,12 +39,11 @@ export default class Header extends Component {
       <nav className='Header'>
         <h1>
           <Link to='/'>
-          📚
             {' '}
             BookNation
           </Link>
         </h1>
-        <span className='Header__tagline--wide'>Rate all the books.</span>
+        <span className='Header__tagline--wide'>Reviews by book lovers</span>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
