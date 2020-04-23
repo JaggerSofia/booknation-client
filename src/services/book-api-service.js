@@ -3,7 +3,7 @@ import TokenService from '../services/token-service'
 
 const BookApiService = {
   getBooks() {
-    return fetch(`${config.API_ENDPOINT}/books`, {
+    return fetch(`https://git.heroku.com/shrouded-wave-72208.git/api/books`, {
   //     headers: {}
 	// 	}).then(res =>
 	// 		!res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
@@ -21,7 +21,7 @@ const BookApiService = {
       })
   },
   getBook(bookId) {
-    return fetch(`${config.API_ENDPOINT}/books/${bookId}`, {
+    return fetch(`https://git.heroku.com/shrouded-wave-72208.git/api/books/${bookId}`, {
       headers: {
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
@@ -34,7 +34,7 @@ const BookApiService = {
       })
   },
   getBookReviews(bookId) {
-    return fetch(`${config.API_ENDPOINT}/books/${bookId}/reviews`, {
+    return fetch(`https://git.heroku.com/shrouded-wave-72208.git/api/books/${bookId}/reviews`, {
       headers: {
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
@@ -47,7 +47,7 @@ const BookApiService = {
       })
   },
   postReview(bookId, text, rating) {
-    return fetch(`${config.API_ENDPOINT}/reviews`, {
+    return fetch(`https://git.heroku.com/shrouded-wave-72208.git/api/reviews`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
