@@ -15,7 +15,7 @@ export default class BookListPage extends Component {
       .catch(this.context.setError)
   }
 
-  renderBook() {
+  renderBooks() {
     const { bookList = [] } = this.context
     return bookList.map(book =>
       <BookListItem
@@ -31,7 +31,7 @@ export default class BookListPage extends Component {
       <Section list className='BookListPage'>
         {error
           ? <p className='red'>There was an error, try again</p>
-          : this.renderBook()}
+          : this.renderBooks()}
       </Section>
     )
   }
