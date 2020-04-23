@@ -1,4 +1,4 @@
 export default {
-     API_ENDPOINT: 'http://localhost:8000/api',
+     API_ENDPOINT: 'https://git.heroku.com/shrouded-wave-72208.git',
      TOKEN_KEY: 'booknation-client-auth-token',
    }
