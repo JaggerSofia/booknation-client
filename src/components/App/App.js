@@ -32,7 +32,7 @@ class App extends Component {
               path={'/'}
               component={BookListPage}
             />
-            <PublicOnlyRoute path={'/login'} component={LoginPage} />
+            <PublicOnlyRoute path={'auth/login'} component={LoginPage} />
             <PublicOnlyRoute path={'/register'} component={RegistrationPage} />
             <PrivateRoute path={'/book/:bookId'} component={BookPage} />
             <Route
