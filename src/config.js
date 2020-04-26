@@ -1,4 +1,4 @@
 export default {
-     API_ENDPOINT: 'https://dashboard.heroku.com/apps/shrouded-wave-72208',
+     API_ENDPOINT: 'https://shrouded-wave-72208.herokuapp.com/api',
      TOKEN_KEY: 'booknation-client-auth-token',
    }
