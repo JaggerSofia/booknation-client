@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BookNation
 
-## Available Scripts
+By [Victoria Moore](https://github.com/JaggerSofia).
 
-In the project directory, you can run:
+BookNation was created for the intent of creating a space for reader to review books that they have read.
 
-### `yarn start`
+# See BookNation in Action
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Get Meals](https://booknation-app.now.sh/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# API
 
-### `yarn test`
+[API Documentation](https://github.com/JaggerSofia/booknation-api)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies Used
 
-### `yarn build`
+**Front End**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* JavaScript
+* React
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Back End**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Node.js
+* Express
+* PostgreSQL
 
-### `yarn eject`
+# Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**BookNation Main Page: Full Screen**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Full Screen](https://user-images.githubusercontent.com/53195545/81482067-39b82b80-91e9-11ea-9289-3d4a0aaa15af.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**BookNation Main Page: Mobile**
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Mobile](https://user-images.githubusercontent.com/53195545/81482069-3b81ef00-91e9-11ea-80de-a867cf9f42e3.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+**BookNation Book Information Page: Full Screen**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+![Full Screen](https://user-images.githubusercontent.com/53195545/81482075-4046a300-91e9-11ea-9410-96b5eadf730d.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**BookNation Book Information Page: Mobile**
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+![Mobile Part 1](https://user-images.githubusercontent.com/53195545/81482071-3cb31c00-91e9-11ea-85b6-d581551f0d40.png)
+![Mobile Part 2](https://user-images.githubusercontent.com/53195545/81482073-3de44900-91e9-11ea-83ff-ac7a43f68b98.png)
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
