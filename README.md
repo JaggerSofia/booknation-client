@@ -6,7 +6,7 @@ BookNation was created for the intent of creating a space for reader to review b
 
 # See BookNation in Action
 
-[Get Meals](https://booknation-app.now.sh/)
+[BookNation](https://booknation-app.now.sh/)
 
 # API
 
