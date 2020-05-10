@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewForm component renders the component as expected 1`] = `
+<form
+  className="ReviewForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="text"
+  >
+    <textarea
+      aria-label="Type a review..."
+      className="Textarea "
+      cols="30"
+      id="text"
+      name="text"
+      placeholder="Type a review.."
+      required={true}
+      rows="3"
+    />
+  </div>
+  <div
+    className="select"
+  >
+    <label
+      htmlFor="rating"
+    >
+      Rate this book!
+    </label>
+    <select
+      aria-label="Rate this book!"
+      id="rating"
+      name="rating"
+      required={true}
+    >
+      <option
+        value="1"
+      >
+        1 Star
+      </option>
+      <option
+        value="2"
+      >
+        2 Stars
+      </option>
+      <option
+        value="3"
+      >
+        3 Stars
+      </option>
+      <option
+        value="4"
+      >
+        4 Stars
+      </option>
+      <option
+        value="5"
+      >
+        5 Stars
+      </option>
+    </select>
+  </div>
+  <button
+    className="Button "
+    type="submit"
+  >
+    Post review
+  </button>
+</form>
+`;
