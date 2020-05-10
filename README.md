@@ -8,6 +8,10 @@ BookNation was created for the intent of creating a space for reader to review b
 
 [BookNation](https://booknation-app.now.sh/)
 
+Demo Login:
+    Username: dunder
+    password: password
+
 # API
 
 [API Documentation](https://github.com/JaggerSofia/booknation-api)
