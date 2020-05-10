@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, BrowserRouter } from 'react-router-dom'
 import { BookStarRating } from '../BookStarRating/BookStarRating'
 import './BookListItem.css'
 
@@ -8,21 +8,23 @@ export default class BookListItem extends Component {
     const { book } = this.props
 
     return (
-      <Link to={`/book/${book.id}`} className='BookListItem'>
-        <div className='BookListItem__image' style={{backgroundImage: `url(${book.image})`}} />
+      <BrowserRouter>
+        <Link to={`/book/${book.id}`} className='BookListItem'>
+          <div className='BookListItem__image' style={{backgroundImage: `url(${book.image})`}} />
 
-        <div className='BookListItem__details'>
-          <div className='BookListItem__text'>
-            <h2 className='BookListItem__heading'>{book.title}</h2>
-            <p className='BookListItem__description'>{truncate(book.content)}</p>
-          </div>
+          <div className='BookListItem__details'>
+            <div className='BookListItem__text'>
+              <h2 className='BookListItem__heading'>{book.title}</h2>
+              <p className='BookListItem__description'>{truncate(book.content)}</p>
+            </div>
 
-          <div className='BookListItem__reviews'>
-            <BookStarRating rating={book.average_review_rating} />
-            <span id='BookListItem__review-count'>{readableReviewCount(book.number_of_reviews)}</span>
+            <div className='BookListItem__reviews'>
+              <BookStarRating rating={book.average_review_rating} />
+              <span id='BookListItem__review-count'>{readableReviewCount(book.number_of_reviews)}</span>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </BrowserRouter>
     )
   }
 }
