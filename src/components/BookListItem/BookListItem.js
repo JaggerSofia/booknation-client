@@ -8,7 +8,6 @@ export default class BookListItem extends Component {
     const { book } = this.props
 
     return (
-      <BrowserRouter>
         <Link to={`/book/${book.id}`} className='BookListItem'>
           <div className='BookListItem__image' style={{backgroundImage: `url(${book.image})`}} />
 
@@ -24,7 +23,6 @@ export default class BookListItem extends Component {
             </div>
           </div>
         </Link>
-      </BrowserRouter>
     )
   }
 }
