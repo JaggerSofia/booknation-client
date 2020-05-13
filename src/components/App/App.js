@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import Header from '../Header/Header'
 import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
@@ -32,9 +32,9 @@ class App extends Component {
               path={'/'}
               component={BookListPage}
             />
-            <PublicOnlyRoute path={'/login'} component={LoginPage} />
-            <PublicOnlyRoute path={'/register'} component={RegistrationPage} />
-            <PrivateRoute path={'/book/:bookId'} component={BookPage} />
+            <PublicOnlyRoute exact path={'/login'} component={withRouter(LoginPage)} />
+            <PublicOnlyRoute exact path={'/register'} component={RegistrationPage} />
+            <PrivateRoute exact path={'/book/:bookId'} component={BookPage} />
             <Route
               component={NotFoundPage}
             />
