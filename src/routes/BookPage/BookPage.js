@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BookContext from '../../contexts/BookContext'
 import BookApiService from '../../services/book-api-service'
 import { Hyph, Section } from '../../components/Utils/Utils'
@@ -73,9 +74,12 @@ function BookReviews({ reviews = [] }) {
       {reviews.map(review =>
         <li key={review.id} className='BookPage__review'>
           <p className='BookPage__review-text'>
-            "
+            <FontAwesomeIcon
+              size='lg'
+              icon='quote-left'
+              className='BooksPage__review-icon blue'
+            />
             {review.text}
-            "
           </p>
           <p className='BookPage__review-user'>
             <BookStarRating rating={review.rating} />
