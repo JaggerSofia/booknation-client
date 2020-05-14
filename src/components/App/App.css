@@ -13,3 +13,8 @@
   .App__main {
     margin-top: 20px;
   }
+
+  .App__description {
+    text-align: center;
+    padding-bottom: 30px;
+  }
