@@ -16,27 +16,9 @@ export default class BookListItem extends Component {
               <h2 className='BookListItem__heading'>{book.title}</h2>
               <p className='BookListItem__description'>{truncate(book.content)}</p>
             </div>
-
-            <div className='BookListItem__reviews'>
-              <BookStarRating rating={book.average_review_rating} />
-              <span id='BookListItem__review-count'>{readableReviewCount(book.number_of_reviews)}</span>
-            </div>
           </div>
         </Link>
     )
-  }
-}
-
-function readableReviewCount(number) {
-  switch(number) {
-    case 0:
-      return 'no reviews yet'
-
-    case 1:
-      return `based on 1 review`
-
-    default:
-      return `based on ${number} reviews`
   }
 }
 
