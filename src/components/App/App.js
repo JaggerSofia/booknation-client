@@ -25,6 +25,7 @@ class App extends Component {
           <Header />
         </header>
         <main className='App__main'>
+          <p className='App__description'>BookNation is a site that book lovers can leave reviews for the books that they enjoyed reading!</p>
           {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
           <Switch>
             <Route
