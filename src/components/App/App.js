@@ -23,7 +23,7 @@ class App extends Component {
           <Header />
         </header>
         <main className='App__main'>
-          <p className='App__description'>In this first adaptation of BookNation it allows book lovers can anonymously leave reviews for the books that they enjoyed reading!</p>
+          <p className='App__description'>In this first adaptation of BookNation, book lovers can anonymously leave reviews for books they enjoy!</p>
           {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
           <Switch>
             <Route
