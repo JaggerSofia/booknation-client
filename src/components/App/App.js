@@ -31,7 +31,7 @@ class App extends Component {
               path={'/'}
               component={BookListPage}
             />
-            <PrivateRoute exact path={'/book/:bookId'} component={BookPage} />
+            <Route exact path={'/book/:bookId'} component={BookPage} />
             <Route
               component={NotFoundPage}
             />
