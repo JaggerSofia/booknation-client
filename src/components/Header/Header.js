@@ -9,32 +9,7 @@ export default class Header extends Component {
     TokenService.clearAuthToken()
   }
 
-  renderLogoutLink() {
-    return (
-      <div className='Header__logged-in'>
-        <Link
-          onClick={this.handleLogoutClick}
-          to='/'>
-          Logout
-        </Link>
-      </div>
-    )
-  }
-
-  renderLoginLink() {
-    return (
-      <div className='Header__not-logged-in'>
-        <Link
-          to='/login'>
-          Log in
-        </Link>
-        <Link
-          to='/register'>
-          Register
-        </Link>
-      </div>
-    )
-  }
+  
 
   render() {
     return <>
@@ -47,9 +22,7 @@ export default class Header extends Component {
           </Link>
         </h1>
         <span className='Header__tagline--wide'>Reviews by book lovers</span>
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
+
       </nav>
 
       <span className='Header__tagline--narrow'>Rate all the books.</span>

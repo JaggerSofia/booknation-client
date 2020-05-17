@@ -5,8 +5,6 @@ import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import BookListPage from '../../routes/BookListPage/BookListPage'
 import BookPage from '../../routes/BookPage/BookPage'
-import LoginPage from '../../routes/LoginPage/LoginPage'
-import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
 import './App.css'
 
@@ -25,7 +23,7 @@ class App extends Component {
           <Header />
         </header>
         <main className='App__main'>
-          <p className='App__description'>BookNation is a site that book lovers can leave reviews for the books that they enjoyed reading!</p>
+          <p className='App__description'>In this first adaptation of BookNation it allows book lovers can anonymously leave reviews for the books that they enjoyed reading!</p>
           {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
           <Switch>
             <Route
@@ -33,8 +31,6 @@ class App extends Component {
               path={'/'}
               component={BookListPage}
             />
-            <PublicOnlyRoute exact path={'/login'} component={LoginPage} />
-            <PublicOnlyRoute exact path={'/register'} component={RegistrationPage} />
             <PrivateRoute exact path={'/book/:bookId'} component={BookPage} />
             <Route
               component={NotFoundPage}
