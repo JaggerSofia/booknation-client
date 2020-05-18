@@ -4,9 +4,7 @@ import TokenService from '../services/token-service'
 const BookApiService = {
   getBooks() {
     return fetch(`${config.API_ENDPOINT}/books`, {
-      // headers: {
-      //   'authorization': `bearer ${TokenService.getAuthToken()}`,
-      // },
+    
     })
       .then(res => {
         if (!res.ok)  {
@@ -17,9 +15,9 @@ const BookApiService = {
   },
   getBook(bookId) {
     return fetch(`${config.API_ENDPOINT}/books/${bookId}`, {
-      // headers: {
-      //   'authorization': `bearer ${TokenService.getAuthToken()}`,
-      // },
+      headers: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
+      },
     })
       .then(res => {
         if (!res.ok)  {
@@ -30,9 +28,9 @@ const BookApiService = {
   },
   getBookReviews(bookId) {
     return fetch(`${config.API_ENDPOINT}/books/${bookId}/reviews`, {
-      // headers: {
-      //   'authorization': `bearer ${TokenService.getAuthToken()}`,
-      // },
+      headers: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
+      },
     })
       .then(res => {
         if (!res.ok)  {
