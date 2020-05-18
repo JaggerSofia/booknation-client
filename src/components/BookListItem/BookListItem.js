@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { BookStarRating } from '../BookStarRating/BookStarRating'
 import './BookListItem.css'
 
 export default class BookListItem extends Component {

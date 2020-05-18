@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
-import PrivateRoute from '../Utils/PrivateRoute'
-import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import BookListPage from '../../routes/BookListPage/BookListPage'
 import BookPage from '../../routes/BookPage/BookPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
