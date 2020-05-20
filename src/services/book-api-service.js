@@ -8,7 +8,7 @@ const BookApiService = {
     })
       .then(res => {
         if (!res.ok)  {
-          res.json().then(e => Promise.reject(e));
+          return res.json().then(e => Promise.reject(e));
         }
         return res.json()
       })
@@ -21,7 +21,7 @@ const BookApiService = {
     })
       .then(res => {
         if (!res.ok)  {
-          res.json().then(e => Promise.reject(e));
+          return res.json().then(e => Promise.reject(e));
         }
         return res.json()
       })
@@ -34,7 +34,7 @@ const BookApiService = {
     })
       .then(res => {
         if (!res.ok)  {
-          res.json().then(e => Promise.reject(e));
+          return res.json().then(e => Promise.reject(e));
         }
         return res.json()
       })
@@ -54,7 +54,7 @@ const BookApiService = {
     })
       .then(res => {
         if (!res.ok)  {
-          res.json().then(e => Promise.reject(e));
+          return res.json().then(e => Promise.reject(e));
         }
         return res.json()
       })
