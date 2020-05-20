@@ -39,7 +39,9 @@ const BookApiService = {
         return res.json()
       })
   },
+  
   postReview(bookId, text, rating) {
+    console.log(TokenService.getAuthToken())
     return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
       headers: {
