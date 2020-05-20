@@ -37,7 +37,6 @@ const BookApiService = {
   },
   
   postReview(bookId, text, rating) {
-    console.log('This is working')
     return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
       headers: {
