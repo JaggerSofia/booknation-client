@@ -15,9 +15,7 @@ const BookApiService = {
   },
   getBook(bookId) {
     return fetch(`${config.API_ENDPOINT}/books/${bookId}`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
+      
     })
       .then(res => {
         if (!res.ok)  {
@@ -28,9 +26,7 @@ const BookApiService = {
   },
   getBookReviews(bookId) {
     return fetch(`${config.API_ENDPOINT}/books/${bookId}/reviews`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
+    
     })
       .then(res => {
         if (!res.ok)  {
@@ -41,12 +37,11 @@ const BookApiService = {
   },
   
   postReview(bookId, text, rating) {
-    console.log(TokenService.getAuthToken())
+    console.log('This is working')
     return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
       body: JSON.stringify({
         book_id: bookId,
